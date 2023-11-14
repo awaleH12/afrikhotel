@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-.container{
+.navbar-nav li a{
   color: white;
+  font-weight: 500;
 }
