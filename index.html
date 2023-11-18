@@ -58,7 +58,7 @@
                 </div>
                 <!-- Toggle button -->
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-fold-line"></i>
+                    <i class="ri-menu-fold-line burger-menu"></i>
                 </div>
             </nav>
         </header>
@@ -74,26 +74,86 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="assests/images/gardenface.JPG" width="1920" height="1080" alt="accomodation vip (3)" loading="lazy" class="object-fit" style="object-position:50% 50%" > 
+                            <img src="assests/images/gardenface.JPG" width="1920" height="1080" alt="accomodation vip (3)" > 
                         </div>
                         <div class="carousel-item">
-                            <img src="assests/images/accomodation vip (2).jpg" width="1920" height="1080" alt="accomodation vip (3)" loading="lazy" class="object-fit" style="object-position:50% 50%" > 
+                            <img src="assests/images/accomodation vip (2).jpg" width="1920" height="1080" alt="accomodation vip (3)" > 
                         </div>
                         <div class="carousel-item">
-                            <img src="assests/images/accomodation vip (3).jpg" width="1920" height="1080" alt="accomodation vip (3)" loading="lazy" class="object-fit" style="object-position:50% 50%" > 
+                            <img src="assests/images/accomodation vip (3).jpg" width="1920" height="1080" alt="accomodation vip (3)" > 
                         </div>
                        
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="carousel-control-prev-icon slider-arows" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <button class="carousel-control-next slider-arows" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
 
+                  <!-- ======= BOOKING SECTION ======== -->
+                   <div class="booking-container container" id="booking-container">
+                   
+                        <form action="/booking" class="booking-form" method="post" target="_blank">
+                            <div class="form-element dates-el">
+                                <label for="booking-dates-trigger"><span>TRAVEL DATES</span></label>
+                                <button type="button" class="booking-dates-trigger" id="booking-dates-trigger">
+                                    <span><i>from</i></span>
+                                    <i class="ri-calendar-2-fill calender-icon"></i>
+                                </button>
+                            </div>
+
+                            <div class="column options-col">
+                                <div class="form-element rooms-el">
+                                    <label for="booking-rooms">Rooms</label>
+                                    <select name="rooms" class="booking-rooms" id="booking-rooms" data-controled-by="rooms-selected">
+                                        <option value="1" selected>01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="4">04</option>
+                                        <option value="5">05</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-element adults-el">
+                                    <label for="booking-adults">Adults</label>
+                                    <select name="adults" class="booking-adults" id="booking-adults" data-controled-by="adults-selected">
+                                        <option value="0" selected>0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-element children-el">
+                                    <label for="booking-children">Children</label>
+                                    <select name="children" class="booking-children" id="booking-children" data-controled-by="children-selected">
+                                        <option value="0" selected>0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-element promo-el">
+                                    <label for="booking-promo">Promo Code</label>
+                                    <input type="text" name="promo" class="booking-promo" id="booking-promo" data-controled-by="promo-selected">
+                                </div>
+
+                                <div class="column controls-col">
+                                    <button class="button submit-booking-button" type="submit" data-dtm-event="check-availability" aria-label="Book Now">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                   
+                   </div>
+           
             <!--==================== HOME ====================-->
            
             <!--==================== ABOUT ====================-->
