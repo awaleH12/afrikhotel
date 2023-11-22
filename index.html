@@ -210,13 +210,13 @@
                         <div class="about__image-el2"><img src="assests/images/accomodation vip (6).jpg" alt=""> <br> <img src="assests/images/accommodation double (2).jpg" alt=""></div>
                         <div class="about__image-el3"> <div class="about__data">
                             <h3 class="section__subtitle">Afrik<span> Hotel and Restaurant:</span></h3>
-                            <h2 class="section__title">About Us:</h2>
+                            <br>
                             <p class="about__description">
-                                Welcome to Afrik Hotel, a distinguished establishment founded in September 2015 by visionary Somali entrepreneurs driven by a passion for the evolving hospitality landscape in our nation. Strategically nestled between the iconic KM4 roundabout and Airport Road in Mogadishu, Afrik Hotel is dedicated to setting new standards in the hospitality sector.
+                                A distinguished establishment founded in September 2015 by visionary Somali entrepreneurs driven by a passion for the evolving hospitality landscape in our nation. Strategically nestled between the iconic KM4 roundabout and Airport Road in Mogadishu, Afrik Hotel is dedicated to setting new standards in the hospitality sector.
                                 <br />
                                 <br />
                                 <span>Mission:</span>
-                                At Afrik Hotel, our mission is simple yet profound – to exceed your expectations by providing unparalleled hospitality services. We are committed to ensuring customer satisfaction through the delivery of high-quality services 24/7. Our approach involves the implementation of safe and environmentally friendly practices, creating an atmosphere that fosters the growth and inspiration of our dedicated workforce.
+                                At Afrik Hotel, our mission is simple yet profound to exceed your expectations by providing unparalleled hospitality services. We are committed to ensuring customer satisfaction through the delivery of high-quality services 24/7. Our approach involves the implementation of safe and environmentally friendly practices, creating an atmosphere that fosters the growth and inspiration of our dedicated workforce.
                                 <br>
                                 <br>
                                 <span>Vision:</span>
@@ -232,7 +232,45 @@
             </section>
 
             <!--==================== ACCOMODATIONS ====================-->
-            
+            <section class="accommodation section" id="accommodation">
+                <div class="accommodation-outer-container">
+                    <div class="accommodation-text container" id="accommodation-text">
+                        <h2>Accommodation at Afrik Hotel</h2>
+                        <p>
+                            Indulge in a harmonious blend of comfort and luxury at Afrik Hotel. Our distinguished establishment, founded in September 2015, is strategically located between the iconic KM4 roundabout and Airport Road in Mogadishu, offering an oasis of hospitality in the heart of the city.
+                        </p>
+                    </div>
+                    <div class="accomodation-container">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assests/images/img-svc/footer-bgv2.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assests/images/img-svc/colorsbg.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assests/images/img-svc/footer-bgv2.png" class="d-block w-100" alt="...">
+                              </div>
+                            
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                    <img src="assests/images/img-svc/arrow-left-circle-line.svg" alt="">
+                                    <span class="visually-hidden" aria-hidden="true">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                    <img src="assests/images/img-svc/arrow-right-circle-line (1).svg" alt="">
+                                    <span class="visually-hidden" aria-hidden="true">Next</span> 
+                                  </button>
+                        
+                            </div>
+                          
+                         
+                          </div>
+                        <!-- <img src="..." class="img-fluid" alt="..." loading="lazy"> -->
+                    </div>
+                </div>
+                
+            </section>
             <!--==================== RESTAURANT ====================-->
             
             <!--==================== MEETINGS AND EVENTS ====================-->
@@ -240,18 +278,102 @@
             <!--==================== GALLERY ====================-->
 
             <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <h3 class="section__subtitle">Get in <span>Touch</span></h3>
+                <h2 class="section__title">Contact Us</h2>
+
+                <div class="contact__container container grid">
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <input
+                                type="text"
+                                required
+                                autocomplete="off"
+                                placeholder="Enter your name"
+                                name="user_name"
+                                class="contact__input"
+                            />
+                            <input
+                                type="email"
+                                required
+                                autocomplete="off"
+                                placeholder="Enter your email"
+                                name="user_email"
+                                class="contact__input"
+                            />
+                        </div>
+
+                        <textarea
+                            name="user_feedback"
+                            autocomplete="off"
+                            required
+                            placeholder="Enter your message"
+                            class="contact__input"
+                        ></textarea>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="button contact__button">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </section>
             
           
         </main>
 
         <!--==================== FOOTER ====================-->
-        
+        <footer class="footer">
+            <div class="footer__container container d-flex">
+                <div class="web__info__container">
+                    <h1 class="footer__title">Afrik<span> Hotel and Restaurant</span></h1>
+                    <h2 class="footer__subtitle">Mogadishu Somalia</h2>
+                    <i class="ri-mail-line"> Email: afrikhotel0909@gmail.com</i>
+                    <br>
+                    <i class="ri-smartphone-fill">Phone: +252619603333/ +252619884444</i>
+                 
+                    
+                </div>
+                <div class="social__media__container">
+                    <div><h2 class="footer__subtitle">Social Media Links</h2></div>
+                    <div class="footer__social">
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="site__map">
+                    <h2 class="site__map__title">Site Map</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15949.26059096541!2d45.3100625!3d2.0296875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d5841f714698b79%3A0xea6dc45c8e777ac3!2sAfrik%20Hotel%20And%20Restaurant!5e0!3m2!1sen!2sso!4v1700678458889!5m2!1sen!2sso" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <span class="footer__copy">
+                    &copy; Copyright 2023 Afrik Hotel and Restaurant. All rights reserved
+                </span>
+            </div>
+                </footer>
         <!--========== SCROLL UP ==========-->
-      
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
         <!--=============== SCROLLREVEAL ===============-->
-        
+        <script src="assets/js/scrollreveal.min.js"></script>
+
         <!--=============== EMAIL JS ===============-->
-       
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
         <!--=============== MAIN JS ===============-->
         <script src="assests/js/main.js"></script>
       
