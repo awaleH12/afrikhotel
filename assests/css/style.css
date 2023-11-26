@@ -547,8 +547,84 @@ padding: 3rem 1rem 2rem;
   height: 285px;
 }
 
-
 /*=============== RESTAURANT ===============*/
+.restaurant {
+  background-color: var(--container-color);
+  text-align: center;
+}
+.restaurant__container {
+  row-gap: 2rem;
+  justify-content: center;
+  padding-block: 1rem;
+  width: 600px;
+  height: auto;
+}
+.restaurant__multi__card{
+  row-gap: 1rem;
+  justify-content: center;
+  padding-block: 1rem;
+  width: 350px;
+  height: auto;
+  grid-template-columns: repeat(2, 350px);
+}
+.restaurant__card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+ 
+ 
+}
+.restaurant__img {
+  width: 100%;
+  height: 100%;
+}
+.restaurant__modal {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 0%, 0),
+      hsla(var(--hue), 70%, 40%, 0.8) 120%
+  );
+  backdrop-filter: blur(4px);
+  --webkit-backdrop-filter: blur(4px); /* This is for safari browser */
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: bottom 0.4s;
+}
+.restaurant__subtitle,
+.restaurant__button {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+}
+.restaurant__subtitle {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.restaurant__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.75rem;
+}
+.restaurant__button {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-weight: var(--font-medium);
+}
+.restaurant__button i {
+  font-size: 1.25rem;
+}
+.restaurant__card:hover .restaurant__modal {
+  bottom: 0;
+}
+
+/*=============== next section ===============*/
 .skills {
   background-color: var(--container-color);                      
 }
@@ -751,7 +827,7 @@ padding: 3rem 1rem 2rem;
     .about__container,
     .skills__container,
     .services__container,
-    .projects__container,
+    .restaurant__container,
     .contact__container {
         grid-template-columns: 360px;
         justify-content: center;
@@ -784,7 +860,7 @@ padding: 3rem 1rem 2rem;
         order: 1;
     }
     .services__container,
-    .projects__container {
+    .restaurant__container {
         grid-template-columns: repeat(2, 352px);
     }
 }
@@ -873,11 +949,11 @@ padding: 3rem 1rem 2rem;
     .services__card {
         padding: 3.5rem 2rem;
     }
-    .projects__container {
-        grid-template-columns: repeat(3, 350px);
+    .restaurant__container {
+        grid-template-columns: repeat(2, 700px);
         row-gap: 3.5rem;
     }
-    .projects__button {
+    .restaurant__button {
         font-size: var(--normal-font-size);
     }
     .contact__container {
