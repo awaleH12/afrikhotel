@@ -346,20 +346,28 @@ img{
 
 
 /*=============== HOME ===============*/
+
+
+
+/*=============== BUTTON ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--text-color-white);
+  padding: 1rem 1.75rem;
+  border: 1px solid black;
+  color: black;
+  font-weight: var(--font-medium);
+  transition: box-shadow 0.4s;
+}
+.button:hover {
+  box-shadow: 0 8px 24px black;
+}
+/*=============== HOME ===============*/
 .home {
-  background-color: var(--container-color);
   margin-block: 1rem;
   margin-block: 7rem 2rem;
-
-
 }
-.home__container {
-  backdrop-filter: blur(24px);
-  --webkit-backdrop-filter: blur(24px); /* Safari browser */
-  padding-top: 2rem;
-  padding-left: 2rem;
-  
-}
+
 .home__content {
   
   display: grid;
@@ -383,10 +391,64 @@ img{
 .home__description {
   margin-block: 1rem 1.5rem;
 }
+
+.home.section{
+  background-image: url("/assests/images/img-svc/accommodation-pattern.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+}
+.home__container{
+  background-color: var(--container-color);
+}
+.home__data {
+  text-align: center;
+}
+.home__description {
+  margin-bottom: 2rem;
+}
+.home__data span{
+  color: var(--header-color);
+  font-size: var(--h2-font-size);
+}
+
+/* .home__image {
+  justify-self: center;
+} */
+/* .home__blob {
+  width: 320px;
+} */
+
+img{
+  display: block;
+}
+.home__image{
+display:grid;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 2fr 3fr;
+gap: 1rem;
+padding: 3rem 1rem 2rem;
+}
+.home__image-el1{
+  width: 720px;
+  height: auto;
+}
+.home__image-el2{
+  width: 328px;
+  height: auto;
+}
+.home__image-el4{
+  width: auto;
+  height: 607px;
+}
+.home__image-el3 .home__data{
+  padding:1rem ;
+}
 .home__social {
   display: flex;
   justify-content: center;
   column-gap: 1.25rem;
+  margin: 1rem;
 }
 .home__social-link {
   display: flex;
@@ -413,82 +475,6 @@ img{
 .button-home:hover{
   box-shadow: 0 8px 24px black;
 
-}
-
-.home-img{
-  display: grid;
-  grid-template-rows: 1fr;
-  gap: 0.5rem;
-  width: auto;
-  padding-right: 1rem;
-  
-}
-
-/*=============== BUTTON ===============*/
-.button {
-  display: inline-block;
-  background-color: var(--text-color-white);
-  padding: 1rem 1.75rem;
-  border: 1px solid black;
-  color: black;
-  font-weight: var(--font-medium);
-  transition: box-shadow 0.4s;
-}
-.button:hover {
-  box-shadow: 0 8px 24px black;
-}
-/*=============== ABOUT ===============*/
-.about.section{
-  background-image: url("/assests/images/img-svc/accommodation-pattern.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:contain;
-}
-.about__container{
-  background-color: var(--container-color);
-}
-.about__data {
-  text-align: center;
-}
-.about__description {
-  margin-bottom: 2rem;
-}
-.about__data span{
-  color: var(--header-color);
-  font-size: var(--h2-font-size);
-}
-
-/* .about__image {
-  justify-self: center;
-} */
-/* .about__blob {
-  width: 320px;
-} */
-
-img{
-  display: block;
-}
-.about__image{
-display:grid;
-grid-template-columns: 2fr 1fr;
-grid-template-rows: 2fr 3fr;
-gap: 1rem;
-padding: 3rem 1rem 2rem;
-}
-.about__image-el1{
-  width: 720px;
-  height: auto;
-}
-.about__image-el2{
-  width: 328px;
-  height: auto;
-}
-.about__image-el4{
-  width: auto;
-  height: 607px;
-}
-.about__image-el3 .about__data{
-  padding:1rem ;
 }
 
 /*=============== ACCOMMODATION ===============*/
@@ -823,7 +809,7 @@ padding: 3rem 1rem 2rem;
 /* For medium devices */
 @media screen and (min-width: 576px) {
     .home__container,
-    .about__container,
+    .home__container,
     .skills__container,
     .services__container,
     .restaurant__container,
@@ -837,25 +823,25 @@ padding: 3rem 1rem 2rem;
         width: 55%;
     }
     .home__container,
-    .about__container,
+    .home__container,
     .skills__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
     .home__data,
-    .about__data,
+    .home__data,
     .skills__data,
-    :is(.about__data, .skills__data) :is(.section__subtitle, .section__title) {
+    :is(.home__data, .skills__data) :is(.section__subtitle, .section__title) {
         text-align: initial;
     }
     .home__social {
         justify-content: initial;
     }
     .home__blob,
-    .about__blob {
+    .home__blob {
         width: 400px;
     }
-    .about__data {
+    .home__data {
         order: 1;
     }
     .services__container,
@@ -913,15 +899,15 @@ padding: 3rem 1rem 2rem;
     .home__social {
         column-gap: 1.5rem;
     }
-    .about__container {
+    .home__container {
         grid-template-columns: 550px 460px;
         column-gap: 4.5rem;
         padding-bottom: 1rem;
     }
-    .about__blob {
+    .home__blob {
         width: 550px;
     }
-    .about__description {
+    .home__description {
         margin-bottom: 3rem;
     }
     .skills__container {
