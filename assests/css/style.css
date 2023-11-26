@@ -586,8 +586,7 @@ padding: 3rem 1rem 2rem;
   height: 100%;
   background: linear-gradient(
       180deg,
-      hsla(0, 0%, 0%, 0),
-      hsla(var(--hue), 70%, 40%, 0.8) 120%
+      hsla(0, 0%, 0%, 0), rgb(5, 61, 66)
   );
   backdrop-filter: blur(4px);
   --webkit-backdrop-filter: blur(4px); /* This is for safari browser */
