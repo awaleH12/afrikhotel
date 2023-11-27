@@ -340,15 +340,6 @@ img{
   background-color: #fff;
 }
 
-
-
-
-
-
-/*=============== HOME ===============*/
-
-
-
 /*=============== BUTTON ===============*/
 .button {
   display: inline-block;
@@ -361,6 +352,10 @@ img{
 }
 .button:hover {
   box-shadow: 0 8px 24px black;
+}
+.button a{
+  color: var(--text-color-black);
+  text-align: center;
 }
 /*=============== HOME ===============*/
 .home {
@@ -412,13 +407,6 @@ img{
   font-size: var(--h2-font-size);
 }
 
-/* .home__image {
-  justify-self: center;
-} */
-/* .home__blob {
-  width: 320px;
-} */
-
 img{
   display: block;
 }
@@ -441,14 +429,19 @@ padding: 3rem 1rem 2rem;
   width: auto;
   height: 607px;
 }
-.home__image-el3 .home__data{
-  padding:1rem ;
+.home__image-el3{
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding:2rem ;
+  text-align: center;
 }
 .home__social {
   display: flex;
   justify-content: center;
   column-gap: 1.25rem;
   margin: 1rem;
+ 
 }
 .home__social-link {
   display: flex;
@@ -462,20 +455,22 @@ padding: 3rem 1rem 2rem;
 .home__social-link:hover {
   transform: translateY(-0.25rem);
 }
-.button-home{
-  width: 100%;
+.button{
+  width: 350px;
   min-width: 265px;
   font: 700 16px/40px Grifo S,serif;
   background-color: #fff;
   border: 1px solid black;
-  padding: 1rem;
   color: black;
 }
 
-.button-home:hover{
+.button:hover{
   box-shadow: 0 8px 24px black;
 
 }
+/* .booking__button a{
+  text-align: center;
+} */
 
 /*=============== ACCOMMODATION ===============*/
 .accommodation-outer-container{
@@ -511,6 +506,7 @@ padding: 3rem 1rem 2rem;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
   row-gap: 1rem;
+ 
 }
 .room__gallery__main__img__grid{
   grid-template-columns: 2fr 1fr;
@@ -541,17 +537,40 @@ padding: 3rem 1rem 2rem;
 .restaurant__container {
   row-gap: 2rem;
   justify-content: center;
-  padding-block: 1rem;
-  width: 600px;
-  height: auto;
+
+  
+}
+.get__quote{
+  text-align: center;
+  color: var(--text-color-black);
+}
+
+.get__quote p{
+  font-size: var(--bigger-font-size);
+}
+.button{
+  width: 350px;
+  min-width: 265px;
+  font: 700 16px/40px Grifo S,serif;
+  background-color: #fff;
+  border: 1px solid black;
+}
+.get__quote a{
+  color: var(--text-color-black);
 }
 .restaurant__multi__card{
   row-gap: 1rem;
   justify-content: center;
-  padding-block: 1rem;
-  width: 350px;
-  height: auto;
   grid-template-columns: repeat(2, 350px);
+}
+.restaurant__card img{
+  width: 700px;
+  height: 700px;
+}
+.restaurant__card__mini{
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 .restaurant__card {
   position: relative;
@@ -560,6 +579,7 @@ padding: 3rem 1rem 2rem;
  
  
 }
+
 .restaurant__img {
   width: 100%;
   height: 100%;
@@ -605,9 +625,38 @@ padding: 3rem 1rem 2rem;
 .restaurant__button i {
   font-size: 1.25rem;
 }
-.restaurant__card:hover .restaurant__modal {
+.restaurant__card:hover .restaurant__modal,  .restaurant__card__mini:hover .restaurant__modal  {
   bottom: 0;
 }
+
+/*===============MEETINGS AND EVENTS ===============*/
+.venues-outer-container{
+  background-image: url("/assests/images/img-svc/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 7rem;
+ }
+ .veneu__image{
+    background-color: var(--container-color);
+    margin: 2rem;
+ }
+
+ .venues-text h2{
+   font-size: var(--h1-font-size);
+   text-align: center;
+   color: black;
+   margin-top: 7rem;
+  
+ }
+ .venues-text p{
+   text-align: center;
+   color: black;
+ }
 
 /*=============== next section ===============*/
 .skills {
@@ -841,9 +890,9 @@ padding: 3rem 1rem 2rem;
     .home__blob {
         width: 400px;
     }
-    .home__data {
+    /* .home__data {
         order: 1;
-    }
+    } */
     .services__container,
     .restaurant__container {
         grid-template-columns: repeat(2, 352px);
