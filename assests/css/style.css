@@ -440,7 +440,7 @@ padding: 3rem 1rem 2rem;
   display: flex;
   justify-content: center;
   column-gap: 1.25rem;
-  margin: 1rem;
+  margin: 2rem;
  
 }
 .home__social-link {
@@ -528,7 +528,9 @@ padding: 3rem 1rem 2rem;
   width: 534px;
   height: 285px;
 }
-
+.room__booking{
+  justify-self: center;
+}
 /*=============== RESTAURANT ===============*/
 .restaurant {
   background-color: var(--container-color);
@@ -657,7 +659,11 @@ padding: 3rem 1rem 2rem;
    text-align: center;
    color: black;
  }
-
+.get__quote{
+  background-color: var(--text-color-white);
+  border: 1px solid grey;
+  padding: 2rem;
+}
 /*=============== next section ===============*/
 .skills {
   background-color: var(--container-color);                      
