@@ -388,7 +388,7 @@ img{
 }
 
 .home.section{
-  background-image: url("/assests/images/img-svc/accommodation-pattern.jpg");
+  background-image: url("/assests/images/img-svc/bg7\ map\ of\ somalia.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size:contain;
@@ -473,40 +473,55 @@ padding: 3rem 1rem 2rem;
 } */
 
 /*=============== ACCOMMODATION ===============*/
-.accommodation-outer-container{
- background-image: url("/assests/images/img-svc/footer-bg.jpg");
- background-repeat: no-repeat;
- background-position: center;
- background-size:contain;
+.accommodation{
+  background-image: url("/assests/images/img-svc/bg7\ map\ of\ somalia.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  /* margin-top: 7rem; */
 }
 .accommodation-outer-container{
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* padding-top: 7rem; */
+ 
 }
 .accommodations{
-  background-color: var(--container-color);
+  background-color: #fff;
   width: 1440px;
   height: auto;
   text-align: center;
+  color: black;
+
+}
+.accommodations h4{
+  color: black;
+}
+.accommodation-text{
+  padding-block: 3rem 1rem;
+  text-align: center;
+  color: var(--text-color-white);
 }
 .accommodation-text h2{
   font-size: var(--h1-font-size);
-  text-align: center;
-  color: black;
-  margin-top: 7rem;
-  padding-block: 3rem 1rem;
 }
-.accommodation-text p{
-  text-align: center;
-  color: black;
-}
+/* .accommodation-text p{
+  color: var(--text-color-white);
+} */
 .room__gallery__grid{
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
   row-gap: 1rem;
+
+  
  
+}
+.next_prev_icon{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 .room__gallery__main__img__grid{
   grid-template-columns: 2fr 1fr;
@@ -706,43 +721,6 @@ padding: 3rem 1rem 2rem;
   border: 1px solid grey;
   padding: 2rem;
 }
-/*=============== next section ===============*/
-.skills {
-  background-color: var(--container-color);                      
-}
-.skills__container {
-  padding-bottom: 2rem;
-  row-gap: 3.5rem;
-}
-.skills__data {
-  text-align: center;
-}
-.skills__description {
-  margin-bottom: 2rem;
-}
-.skills__content,
-.skills__group {
-  display: grid;
-}
-
-.skills__content {
-  grid-template-columns: repeat(2, max-content);
-  column-gap: 4rem;
-  justify-content: center;
-  align-items: baseline;
-}
-.skills__group {
-  row-gap: 1rem;
-  list-style: decimal-leading-zero;
-}
-.skills__item {
-  font-weight: var(--font-medium);
-  color: var(--title-color);
-}
-.skills__item::marker {
-  color: var(--first-color);
-}
-
 
 /*=============== CONTACT ===============*/
 .contact.section{
