@@ -531,6 +531,48 @@ padding: 3rem 1rem 2rem;
 .room__booking{
   justify-self: center;
 }
+.amenities{
+  background-color: #fff;
+  flex-flow: column;
+  padding: 1rem;
+  color: var(--text-color-black);
+}
+.amenities__title{
+  font-size: var(--h3-font-size);
+ text-align: center;
+ margin-bottom: 1rem;
+}
+.amenities__icons{
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.amenities__icons__child{
+
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+ 
+}
+.amenities__icons__grand__child{
+  width: 80px;
+  height: 80px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--smaller-font-size);
+  border: 2px solid rgb(214, 214, 214);
+  border-radius: 13px;
+  padding: 0.5rem;
+}
+.amenities__icons__grand__child img span{
+  display: block;
+}
+
+
+
 /*=============== RESTAURANT ===============*/
 .restaurant {
   background-color: var(--container-color);
