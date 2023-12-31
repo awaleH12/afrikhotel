@@ -688,6 +688,23 @@ padding: 3rem 1rem 2rem;
   bottom: 0;
 }
 
+/* ===== MENU ===== */
+.menu__main{
+  background-color: var(--container-color);
+
+  padding-block: 7rem 3rem;
+  padding-inline: 2rem;
+
+}
+.menu__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+.menu__main p{
+  font-size: var(--body-font);
+  text-align: center;
+}
 /*===============MEETINGS AND EVENTS ===============*/
 .venues-outer-container{
   background-image: url("/assests/images/img-svc/footer-bg.jpg");
