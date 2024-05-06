@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--=============== FAVICON ===============-->
+        <link rel="icon" href="assests/images/favicon/favicon_io/favicon.ico">
+
+        
+        <!--=============== REMIXICONS ===============-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+
+        <!--=============== Bootsrap CDN Links ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assests/css/white.css" id="style"/>
+
+        <title>Afrik Hotel and Restaurant|Best Hotel|5 star Hotel|Accommodations|Meetings and Events</title>
+    </head>
+
+    <body>
+         <!--==================== HEADER ====================-->
+         <header class="header" id="header">
+            <nav class="nav container">
+                <img src="assests/logo/afrik logo 800by800.png" width="100" height="100" alt="logo" class="nav__logo">
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active-link"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="booking.html" class="nav__link">Accommodations</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="restaurant.html" class="nav__link">Restaurant</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="venues.html" class="nav__link">Meetings and Events</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Afrik Trevl Tips</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Close Button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-fold-line burger-menu"></i>
+                </div>
+            </nav>
+            <!-- Theme toggle button -->
+        
+            <img class="btn-container" src="assests/img/sunn-01.png" alt="dark" id="icon" width="60" height="30">
+       
+        </header>
+         <!--==================== MAIN ====================-->
+         <main class="main">
+
+                  <!--==================== GALLERY SLIDER ====================-->
+                  <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assests/img/accomodation vip.jpg" width="1920" height="1080" alt="accomodation vip (3)" > 
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assests/img/accommodation vip2.jpg" width="1920" height="1080" alt="accomodation vip (3)" > 
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assests/img/accommodation vip3 edit.jpg" width="1920" height="1080" alt="accomodation vip (3)" > 
+                        </div>
+                       
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon slider-arows" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next slider-arows" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                  <!-- ======= BOOKING SECTION ======== -->
+                   <div class="booking-container container" id="booking-container">
+                   
+                        <form action="/booking" class="booking-form" method="post" target="_blank">
+                            <div class="form-element dates-el">
+                                <label for="booking-dates-trigger"><span>TRAVEL DATES</span></label>
+                                <button type="button" class="booking-dates-trigger" id="booking-dates-trigger">
+                                    <span><i>from</i></span>
+                                    <i class="ri-calendar-2-fill calender-icon"></i>
+                                </button>
+                            </div>
+
+                            <div class="column options-col">
+                                <div class="form-element rooms-el">
+                                    <label for="booking-rooms">Rooms</label>
+                                    <select name="rooms" class="booking-rooms" id="booking-rooms" data-controled-by="rooms-selected">
+                                        <option value="1" selected>01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="4">04</option>
+                                        <option value="5">05</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-element adults-el">
+                                    <label for="booking-adults">Adults</label>
+                                    <select name="adults" class="booking-adults" id="booking-adults" data-controled-by="adults-selected">
+                                        <option value="0" selected>0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-element children-el">
+                                    <label for="booking-children">Children</label>
+                                    <select name="children" class="booking-children" id="booking-children" data-controled-by="children-selected">
+                                        <option value="0" selected>0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-element promo-el">
+                                    <label for="booking-promo">Promo Code</label>
+                                    <input type="text" name="promo" class="booking-promo" id="booking-promo" data-controled-by="promo-selected">
+                                </div>
+
+                                <div class="column controls-col">
+                                    <button class="button submit-booking-button" type="submit" data-dtm-event="check-availability" aria-label="Book Now">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                   
+                   </div>
+           
+           
+            <!--==================== HOME ====================-->
+        
+            </section>
+
+            <!--==================== ACCOMODATIONS ====================-->
+  
+          
+            <!--==================== GALLERY ====================-->
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <h3 class="section__subtitle">Get in <span>Touch</span></h3>
+                <h2 class="section__title">Contact Us</h2>
+
+                <div class="contact__container container grid">
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <input
+                                type="text"
+                                required
+                                autocomplete="off"
+                                placeholder="Enter your name"
+                                name="user_name"
+                                class="contact__input"
+                            />
+                            <input
+                                type="email"
+                                required
+                                autocomplete="off"
+                                placeholder="Enter your email"
+                                name="user_email"
+                                class="contact__input"
+                            />
+                        </div>
+
+                        <textarea
+                            name="user_feedback"
+                            autocomplete="off"
+                            required
+                            placeholder="Enter your message"
+                            class="contact__input"
+                        ></textarea>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="button contact__button">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </section>
+            
+          
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container d-flex">
+                <div class="web__info__container">
+                    <h1 class="footer__title">Afrik<span> Hotel and Restaurant</span></h1>
+                    <h2 class="footer__subtitle">Mogadishu Somalia</h2>
+                    <i class="ri-mail-line"> Email: afrikhotel0909@gmail.com</i>
+                    <br>
+                    <i class="ri-smartphone-fill">Phone: +252619603333/ +252619884444</i>
+                 
+                    
+                </div>
+                <div class="social__media__container">
+                    <div><h2 class="footer__subtitle">Social Media Links</h2></div>
+                    <div class="footer__social">
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="site__map">
+                    <h2 class="site__map__title">Site Map</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15949.26059096541!2d45.3100625!3d2.0296875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d5841f714698b79%3A0xea6dc45c8e777ac3!2sAfrik%20Hotel%20And%20Restaurant!5e0!3m2!1sen!2sso!4v1700678458889!5m2!1sen!2sso" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <span class="footer__copy">
+                    &copy; Copyright 2023 Afrik Hotel and Restaurant. All rights reserved
+                </span>
+            </div>
+                </footer>
+  
+        <!--=============== MAIN JS ===============-->
+        <script src="assests/js/main.js"></script>
+      
+      
+     <!--=============== Bootsrap CDN Links ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

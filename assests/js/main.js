@@ -101,16 +101,43 @@ const scrollActive = () => {
 };
 window.addEventListener("scroll", scrollActive);
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: "top",
-    distance: "60px",
-    duration: 2000,
-    delay: 400,
-});
-sr.reveal(
-    `.home__data, .home__social, .contact__container, .footer__container`
-);
-sr.reveal(`.home__image`, { origin: "bottom" });
-sr.reveal(`.about__data, .skills__data`, { origin: "left" });
-sr.reveal(`.about__image, .skills__content`, { origin: "right" });
-sr.reveal(`.services__card, .projects__card`, { interval: 100 });
+// const sr = ScrollReveal({
+//     origin: "top",
+//     distance: "60px",
+//     duration: 2000,
+//     delay: 400,
+// });
+// sr.reveal(
+//     `.home__data, .home__social, .contact__container, .footer__container`
+// );
+// sr.reveal(`.home__image`, { origin: "bottom" });
+// sr.reveal(`.about__data, .skills__data`, { origin: "left" });
+// sr.reveal(`.about__image, .skills__content`, { origin: "right" });
+// sr.reveal(`.services__card, .projects__card`, { interval: 100 });
+
+// theme toggle code
+let icon = document.getElementById("icon");
+let style = document.getElementById("style");
+
+icon.onclick = function(){
+
+
+  if(style.href.includes("/assests/css/dark.css")){
+    style.href = "/assests/css/white.css"
+    icon.src = "/assests/img/moonn-01-01.png"
+  
+  } else if (style.href.includes("/assests/css/white.css")) {
+    style.href = "/assests/css/dark.css"
+    icon.src = "assests/img/sunn-01.png"
+  
+    
+  }
+  // style.src ="darktheme.css"
+  // document.body.classList.toggle("darkmode");
+  // if(document.body.classList.contains("darkmode")){
+  //   icon.src = "icons/sunn-01.png"
+  // } else {
+  //   icon.src = "icons/moonn-01-01.png"
+  // }
+ 
+}

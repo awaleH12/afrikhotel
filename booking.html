@@ -18,16 +18,16 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
      
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assests/css/style.css" />
+        <link rel="stylesheet" href="assests/css/white.css" id="style"/>
 
-        <title>Afrik Hotel and Restaurant|Booking</title>
+        <title>Afrik Hotel and Restaurant|Best Hotel|5 star Hotel|Accommodations|Meetings and Events</title>
     </head>
 
     <body>
          <!--==================== HEADER ====================-->
          <header class="header" id="header">
             <nav class="nav container">
-                <img src="assests/logo/afriklogo.png" width="100" height="100" alt="logo" class="nav__logo">
+                <img src="assests/logo/afrik logo 800by800.png" width="100" height="100" alt="logo" class="nav__logo">
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -39,16 +39,16 @@
                             <a href="booking.html" class="nav__link">Accommodations</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#restaurant" class="nav__link">Restaurant</a>
+                            <a href="restaurant.html" class="nav__link">Restaurant</a>
                         </li>
                         <li class="nav__item">
                             <a href="venues.html" class="nav__link">Meetings and Events</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#projects" class="nav__link">Afrik Trevl Tips</a>
+                            <a href="#" class="nav__link">Afrik Trevl Tips</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
+                            <a href="contact.html" class="nav__link">Contact</a>
                         </li>
                     </ul>
                     <!-- Close Button -->
@@ -61,447 +61,592 @@
                     <i class="ri-menu-fold-line burger-menu"></i>
                 </div>
             </nav>
+            <!-- Theme toggle button -->
+        
+            <img class="btn-container" src="assests/img/moonn-01-01.png" alt="dark" id="icon" width="60" height="30">
+       
         </header>
          <!--==================== MAIN ====================-->
          <main class="main">
-           <!--==================== ACCOMODATIONS ====================-->
-          
 
-           <section id="Accommodations" class="accommodation section">
-            <div class="accommodation-outer-container d-flex">
-                <div class="accommodation-text container" id="accommodation-text">
-                    <h2>Accommodation at Afrik Hotel</h2>
-                    <p>
-                    Afrik Hotel, where luxury meets comfort in the heart of Mogadishu. Our accommodation options cater to a diverse range of preferences, ensuring a memorable stay for every guest. Choose from our four distinct room categories, each designed to provide a unique and exceptional experience:
-                    </p>
-                </div>
-                <div id="accommodationslider" class="accommodation__carousel carousel slide" data-bs-ride="true">
+                  <!--==================== GALLERY SLIDER ====================-->
+                  <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                                <div class="accommodations p-5 text-center">
-                                    <p class="mb-0">Elevate your stay with sophisticated design, ample space, and modern amenities—perfect for work and relaxation</p>
-                                    <div class="room__gallery__grid mt-4 d-grid">
-                                        <div class="room__gallery__main__img__grid d-grid">
-                                            <img src="assests/images/accommodation double (3).jpg" alt="" class="room__main__img">
-                                            <div class="room__gallery__side__img__grid d-grid">
-                                                <img src="assests/images/accommodation double (3).jpg" alt="" class="room__side__img1">
-                                                <div class="amenities d-flex">
-                                                    <div class="amenities__title">
-                                                        Room Amenities
+                            <img src="assests/img/accomodation vip.jpg" width="1920" height="1080" alt="accomodation vip (3)" > 
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assests/img/accommodation vip2.jpg" width="1920" height="1080" alt="accomodation vip (3)" > 
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assests/img/accommodation vip3 edit.jpg" width="1920" height="1080" alt="accomodation vip (3)" > 
+                        </div>
+                       
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon slider-arows" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next slider-arows" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                  <!-- ======= BOOKING SECTION ======== -->
+                   <div class="booking-container container" id="booking-container">
+                   
+                        <form action="/booking" class="booking-form" method="post" target="_blank">
+                            <div class="form-element dates-el">
+                                <label for="booking-dates-trigger"><span>TRAVEL DATES</span></label>
+                                <button type="button" class="booking-dates-trigger" id="booking-dates-trigger">
+                                    <span><i>from</i></span>
+                                    <i class="ri-calendar-2-fill calender-icon"></i>
+                                </button>
+                            </div>
+
+                            <div class="column options-col">
+                                <div class="form-element rooms-el">
+                                    <label for="booking-rooms">Rooms</label>
+                                    <select name="rooms" class="booking-rooms" id="booking-rooms" data-controled-by="rooms-selected">
+                                        <option value="1" selected>01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="4">04</option>
+                                        <option value="5">05</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-element adults-el">
+                                    <label for="booking-adults">Adults</label>
+                                    <select name="adults" class="booking-adults" id="booking-adults" data-controled-by="adults-selected">
+                                        <option value="0" selected>0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-element children-el">
+                                    <label for="booking-children">Children</label>
+                                    <select name="children" class="booking-children" id="booking-children" data-controled-by="children-selected">
+                                        <option value="0" selected>0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-element promo-el">
+                                    <label for="booking-promo">Promo Code</label>
+                                    <input type="text" name="promo" class="booking-promo" id="booking-promo" data-controled-by="promo-selected">
+                                </div>
+
+                                <div class="column controls-col">
+                                    <button class="button submit-booking-button" type="submit" data-dtm-event="check-availability" aria-label="Book Now">BOOK NOW</button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                   
+                   </div>
+           
+           
+            <!--==================== HOME ====================-->
+        
+            </section>
+
+            <!--==================== ACCOMODATIONS ====================-->
+          
+
+            <section id="Accommodations" class="accommodation section">
+                <div class="accommodation-outer-container d-flex">
+                    <div class="accommodation-text container" id="accommodation-text">
+                        <h2>Accommodation at Afrik Hotel</h2>
+                        <p>
+                        Afrik Hotel, where luxury meets comfort in the heart of Mogadishu. Our accommodation options cater to a diverse range of preferences, ensuring a memorable stay for every guest. Choose from our four distinct room categories, each designed to provide a unique and exceptional experience:
+                        </p>
+                    </div>
+                    <div id="accommodationslider" class="accommodation__carousel carousel slide" data-bs-ride="true">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                    <div class="accommodations p-5 text-center">
+                                        <p class="mb-0">Elevate your stay with sophisticated design, ample space, and modern amenities—perfect for work and relaxation</p>
+                                        <div class="room__gallery__grid mt-4 d-grid">
+                                            <div class="room__gallery__main__img__grid d-grid">
+                                                <img src="assests/img/accommodation double 1.jpg" alt="" class="room__main__img">
+                                                <div class="room__gallery__side__img__grid d-grid">
+                                                    <img src="assests/img/accommodation double 1.jpg" alt="" class="room__side__img1">
+                                                    <div class="amenities d-flex">
+                                                        <div class="amenities__title">
+                                                            Room Amenities
+                                                        </div>
+                                                        <div class="amenities__icons d-flex">
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-smart-tv-64.png" alt="smart tv">
+                                                                    <span>
+                                                                        Smart TV
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-landline-68.png" alt="Phone">
+                                                                    <span>
+                                                                        Phone
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-fridge-50.png" alt="Minibar">
+                                                                    <span>
+                                                                        Minibar
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons//icons8-safe-64.png" alt="safe">
+                                                                    <span>
+                                                                        Safe
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons//icons8-wifi-64.png" alt="wifi">
+                                                                    <span>
+                                                                        Wifi
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-study-desk-64.png" alt="study Desk">
+                                                                    <span>
+                                                                        S. Desk
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-air-conditioner-64.png" alt="air conditioning">
+                                                                    <span>
+                                                                        Ac
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-electric-kettle-64.png" alt="tea kettle">
+                                                                    <span>
+                                                                        Kettle
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-bottle-of-water-64.png" alt="bottled watter">
+                                                                    <span>
+                                                                        Water
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-room-service-50.png" alt="room service">
+                                                                    <span>
+                                                                        R Service
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                     
                                                     </div>
-                                                    <div class="amenities__icons d-flex">
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-smart-tv-64.png" alt="smart tv">
-                                                                <span>
-                                                                    Smart TV
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-landline-68.png" alt="Phone">
-                                                                <span>
-                                                                    Phone
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-fridge-50.png" alt="Minibar">
-                                                                <span>
-                                                                    Minibar
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons//icons8-safe-64.png" alt="safe">
-                                                                <span>
-                                                                    Safe
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons//icons8-wifi-64.png" alt="wifi">
-                                                                <span>
-                                                                    Wifi
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-study-desk-64.png" alt="study Desk">
-                                                                <span>
-                                                                    S. Desk
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-air-conditioner-64.png" alt="air conditioning">
-                                                                <span>
-                                                                    Ac
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-electric-kettle-64.png" alt="tea kettle">
-                                                                <span>
-                                                                    Kettle
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-bottle-of-water-64.png" alt="bottled watter">
-                                                                <span>
-                                                                    Water
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-room-service-50.png" alt="room service">
-                                                                <span>
-                                                                    R Service
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                 
                                                 </div>
                                             </div>
+                                            <h4 class="mb-0 pt-3 business__suite__room__title">Business Suite</h4>
+                                            <div class="room__booking button">
+                                                <a href="#contact" class="button-home">BOOK NOW</a>
+                                                
+                                            </div>
                                         </div>
-                                        <h4 class="mb-0 pt-3 business__suite__room__title">Business Suite</h4>
+                                    </div>
+                             </div>
+
+                            <div class="carousel-item">
+                                <div class="accommodations p-5 text-center">
+                                    <p class="mb-0">Indulge in luxury with premium furnishings, exclusive amenities, and impeccable service for a truly opulent experience.</p>
+                                    <div class="room__gallery__grid mt-4 d-grid">
+                                        <div class="room__gallery__main__img__grid d-grid">
+                                            <img src="assests/img/accommodation double 1.jpg" alt="" class="room__main__img">
+                                            <div class="room__gallery__side__img__grid d-grid">
+                                                <img src="assests/img/accommodation double 1.jpg" alt="" class="room__side__img1">
+                                                 <div class="amenities d-flex">
+                                                        <div class="amenities__title">
+                                                            Room Amenities
+                                                        </div>
+                                                        <div class="amenities__icons d-flex">
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-smart-tv-64.png" alt="smart tv">
+                                                                    <span>
+                                                                        Smart TV
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-landline-68.png" alt="Phone">
+                                                                    <span>
+                                                                        Phone
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-fridge-50.png" alt="Minibar">
+                                                                    <span>
+                                                                        Minibar
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons//icons8-safe-64.png" alt="safe">
+                                                                    <span>
+                                                                        Safe
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons//icons8-wifi-64.png" alt="wifi">
+                                                                    <span>
+                                                                        Wifi
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-study-desk-64.png" alt="study Desk">
+                                                                    <span>
+                                                                        S. Desk
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-air-conditioner-64.png" alt="air conditioning">
+                                                                    <span>
+                                                                        Ac
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-electric-kettle-64.png" alt="tea kettle">
+                                                                    <span>
+                                                                        Kettle
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-bottle-of-water-64.png" alt="bottled watter">
+                                                                    <span>
+                                                                        Water
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-room-service-50.png" alt="room service">
+                                                                    <span>
+                                                                        R Service
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                     
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="mb-0 pt-3 vip__room__title">VIP</h4>
                                         <div class="room__booking button">
                                             <a href="#contact" class="button-home">BOOK NOW</a>
                                             
                                         </div>
                                     </div>
                                 </div>
-                         </div>
+                            </div>
 
-                        <div class="carousel-item">
-                            <div class="accommodations p-5 text-center">
-                                <p class="mb-0">Indulge in luxury with premium furnishings, exclusive amenities, and impeccable service for a truly opulent experience.</p>
-                                <div class="room__gallery__grid mt-4 d-grid">
-                                    <div class="room__gallery__main__img__grid d-grid">
-                                        <img src="assests/images/accommodation double (3).jpg" alt="" class="room__main__img">
-                                        <div class="room__gallery__side__img__grid d-grid">
-                                            <img src="assests/images/accommodation double (3).jpg" alt="" class="room__side__img1">
-                                             <div class="amenities d-flex">
-                                                    <div class="amenities__title">
-                                                        Room Amenities
+                            <div class="carousel-item">
+                                <div class="accommodations p-5 text-center">
+                                    <p class="mb-0">Ideal for couples or friends, our Double Rooms provide a cozy and convenient retreat with excellent facilities.</p>
+                                    <div class="room__gallery__grid mt-4 d-grid">
+                                        <div class="room__gallery__main__img__grid d-grid">
+                                            <img src="assests/img/accommodation double 1.jpg" alt="" class="room__main__img">
+                                            <div class="room__gallery__side__img__grid d-grid">
+                                                <img src="assests/img/accommodation double 1.jpg" alt="" class="room__side__img1">
+                                                 <div class="amenities d-flex">
+                                                        <div class="amenities__title">
+                                                            Room Amenities
+                                                        </div>
+                                                        <div class="amenities__icons d-flex">
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-smart-tv-64.png" alt="smart tv">
+                                                                    <span>
+                                                                        Smart TV
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-landline-68.png" alt="Phone">
+                                                                    <span>
+                                                                        Phone
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-fridge-50.png" alt="Minibar">
+                                                                    <span>
+                                                                        Minibar
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons//icons8-safe-64.png" alt="safe">
+                                                                    <span>
+                                                                        Safe
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons//icons8-wifi-64.png" alt="wifi">
+                                                                    <span>
+                                                                        Wifi
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-study-desk-64.png" alt="study Desk">
+                                                                    <span>
+                                                                        S. Desk
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-air-conditioner-64.png" alt="air conditioning">
+                                                                    <span>
+                                                                        Ac
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-electric-kettle-64.png" alt="tea kettle">
+                                                                    <span>
+                                                                        Kettle
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-bottle-of-water-64.png" alt="bottled watter">
+                                                                    <span>
+                                                                        Water
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-room-service-50.png" alt="room service">
+                                                                    <span>
+                                                                        R Service
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                     
                                                     </div>
-                                                    <div class="amenities__icons d-flex">
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-smart-tv-64.png" alt="smart tv">
-                                                                <span>
-                                                                    Smart TV
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-landline-68.png" alt="Phone">
-                                                                <span>
-                                                                    Phone
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-fridge-50.png" alt="Minibar">
-                                                                <span>
-                                                                    Minibar
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons//icons8-safe-64.png" alt="safe">
-                                                                <span>
-                                                                    Safe
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons//icons8-wifi-64.png" alt="wifi">
-                                                                <span>
-                                                                    Wifi
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-study-desk-64.png" alt="study Desk">
-                                                                <span>
-                                                                    S. Desk
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-air-conditioner-64.png" alt="air conditioning">
-                                                                <span>
-                                                                    Ac
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-electric-kettle-64.png" alt="tea kettle">
-                                                                <span>
-                                                                    Kettle
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-bottle-of-water-64.png" alt="bottled watter">
-                                                                <span>
-                                                                    Water
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-room-service-50.png" alt="room service">
-                                                                <span>
-                                                                    R Service
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                 
-                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <h4 class="mb-0 pt-3 vip__room__title">VIP</h4>
-                                    <div class="room__booking button">
-                                        <a href="#contact" class="button-home">BOOK NOW</a>
-                                        
+                                        <h4 class="mb-0 pt-3 double__room__title">Double</h4>
+                                        <div class="room__booking button">
+                                            <a href="#contact" class="button-home">BOOK NOW</a>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="carousel-item">
-                            <div class="accommodations p-5 text-center">
-                                <p class="mb-0">Ideal for couples or friends, our Double Rooms provide a cozy and convenient retreat with excellent facilities.</p>
-                                <div class="room__gallery__grid mt-4 d-grid">
-                                    <div class="room__gallery__main__img__grid d-grid">
-                                        <img src="assests/images/accommodation double (3).jpg" alt="" class="room__main__img">
-                                        <div class="room__gallery__side__img__grid d-grid">
-                                            <img src="assests/images/accommodation double (3).jpg" alt="" class="room__side__img1">
-                                             <div class="amenities d-flex">
-                                                    <div class="amenities__title">
-                                                        Room Amenities
+                            <div class="carousel-item">
+                                <div class="accommodations p-5 text-center">
+                                    <p class="mb-0">Tailored for solo travelers, our Single Rooms offer a comfortable and welcoming space for a relaxing stay.</p>
+                                    <div class="room__gallery__grid mt-4 d-grid">
+                                        <div class="room__gallery__main__img__grid d-grid">
+                                            <img src="assests/img/accommodation double 1.jpg" alt="" class="room__main__img">
+                                            <div class="room__gallery__side__img__grid d-grid">
+                                                <img src="assests/img/accommodation double 1.jpg" alt="" class="room__side__img1">
+                                                 <div class="amenities d-flex">
+                                                        <div class="amenities__title">
+                                                            Room Amenities
+                                                        </div>
+                                                        <div class="amenities__icons d-flex">
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-smart-tv-64.png" alt="smart tv">
+                                                                    <span>
+                                                                        Smart TV
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-landline-68.png" alt="Phone">
+                                                                    <span>
+                                                                        Phone
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-fridge-50.png" alt="Minibar">
+                                                                    <span>
+                                                                        Minibar
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons//icons8-safe-64.png" alt="safe">
+                                                                    <span>
+                                                                        Safe
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons//icons8-wifi-64.png" alt="wifi">
+                                                                    <span>
+                                                                        Wifi
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-study-desk-64.png" alt="study Desk">
+                                                                    <span>
+                                                                        S. Desk
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-air-conditioner-64.png" alt="air conditioning">
+                                                                    <span>
+                                                                        Ac
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-electric-kettle-64.png" alt="tea kettle">
+                                                                    <span>
+                                                                        Kettle
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="amenities__icons__child d-flex">
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-bottle-of-water-64.png" alt="bottled watter">
+                                                                    <span>
+                                                                        Water
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                                <div class="amenities__icons__grand__child d-flex">
+                                                                    <img src="assests/images/amenities icons/icons8-room-service-50.png" alt="room service">
+                                                                    <span>
+                                                                        R Service
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                     
                                                     </div>
-                                                    <div class="amenities__icons d-flex">
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-smart-tv-64.png" alt="smart tv">
-                                                                <span>
-                                                                    Smart TV
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-landline-68.png" alt="Phone">
-                                                                <span>
-                                                                    Phone
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-fridge-50.png" alt="Minibar">
-                                                                <span>
-                                                                    Minibar
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons//icons8-safe-64.png" alt="safe">
-                                                                <span>
-                                                                    Safe
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons//icons8-wifi-64.png" alt="wifi">
-                                                                <span>
-                                                                    Wifi
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-study-desk-64.png" alt="study Desk">
-                                                                <span>
-                                                                    S. Desk
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-air-conditioner-64.png" alt="air conditioning">
-                                                                <span>
-                                                                    Ac
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-electric-kettle-64.png" alt="tea kettle">
-                                                                <span>
-                                                                    Kettle
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-bottle-of-water-64.png" alt="bottled watter">
-                                                                <span>
-                                                                    Water
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-room-service-50.png" alt="room service">
-                                                                <span>
-                                                                    R Service
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                 
-                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <h4 class="mb-0 pt-3 double__room__title">Double</h4>
-                                    <div class="room__booking button">
-                                        <a href="#contact" class="button-home">BOOK NOW</a>
-                                        
+                                        <h4 class="mb-0 pt-3 single__room__title">Single</h4>
+                                        <div class="room__booking button">
+                                            <a href="#contact" class="button-home">BOOK NOW</a>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#accommodationslider" data-bs-slide="prev">
+                            <img src="assests/images/prev-next-icons/icons8-back-to-100.png" class="next_prev_icon" aria-hidden="true" alt="Previous">
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#accommodationslider" data-bs-slide="next">
+                            <img src="assests/images/prev-next-icons/icons8-next-page-100.png" class="next_prev_icon" aria-hidden="true"  alt="Next">
+                            <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-
-                        <div class="carousel-item">
-                            <div class="accommodations p-5 text-center">
-                                <p class="mb-0">Tailored for solo travelers, our Single Rooms offer a comfortable and welcoming space for a relaxing stay.</p>
-                                <div class="room__gallery__grid mt-4 d-grid">
-                                    <div class="room__gallery__main__img__grid d-grid">
-                                        <img src="assests/images/accommodation double (3).jpg" alt="" class="room__main__img">
-                                        <div class="room__gallery__side__img__grid d-grid">
-                                            <img src="assests/images/accommodation double (3).jpg" alt="" class="room__side__img1">
-                                             <div class="amenities d-flex">
-                                                    <div class="amenities__title">
-                                                        Room Amenities
-                                                    </div>
-                                                    <div class="amenities__icons d-flex">
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-smart-tv-64.png" alt="smart tv">
-                                                                <span>
-                                                                    Smart TV
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-landline-68.png" alt="Phone">
-                                                                <span>
-                                                                    Phone
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-fridge-50.png" alt="Minibar">
-                                                                <span>
-                                                                    Minibar
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons//icons8-safe-64.png" alt="safe">
-                                                                <span>
-                                                                    Safe
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons//icons8-wifi-64.png" alt="wifi">
-                                                                <span>
-                                                                    Wifi
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-study-desk-64.png" alt="study Desk">
-                                                                <span>
-                                                                    S. Desk
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-air-conditioner-64.png" alt="air conditioning">
-                                                                <span>
-                                                                    Ac
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-electric-kettle-64.png" alt="tea kettle">
-                                                                <span>
-                                                                    Kettle
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amenities__icons__child d-flex">
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-bottle-of-water-64.png" alt="bottled watter">
-                                                                <span>
-                                                                    Water
-                                                                </span>
-                                                                
-                                                            </div>
-                                                            <div class="amenities__icons__grand__child d-flex">
-                                                                <img src="assests/images/amenities icons/icons8-room-service-50.png" alt="room service">
-                                                                <span>
-                                                                    R Service
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                 
-                                                </div>
-                                        </div>
-                                    </div>
-                                    <h4 class="mb-0 pt-3 single__room__title">Single</h4>
-                                    <div class="room__booking button">
-                                        <a href="#contact" class="button-home">BOOK NOW</a>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#accommodationslider" data-bs-slide="prev">
-                        <img src="assests/images/prev-next-icons/icons8-back-to-100.png" class="next_prev_icon" aria-hidden="true" alt="Previous">
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#accommodationslider" data-bs-slide="next">
-                        <img src="assests/images/prev-next-icons/icons8-next-page-100.png" class="next_prev_icon" aria-hidden="true"  alt="Next">
-                        <span class="visually-hidden">Next</span>
-                        </button>
+                    
                     </div>
-                
                 </div>
-            </div>
 
-        </section>
+            </section>
+          
+          
+            <!--==================== GALLERY ====================-->
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <h3 class="section__subtitle">Get in <span>Touch</span></h3>
+                <h2 class="section__title">Contact Us</h2>
+
+                <div class="contact__container container grid">
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <input
+                                type="text"
+                                required
+                                autocomplete="off"
+                                placeholder="Enter your name"
+                                name="user_name"
+                                class="contact__input"
+                            />
+                            <input
+                                type="email"
+                                required
+                                autocomplete="off"
+                                placeholder="Enter your email"
+                                name="user_email"
+                                class="contact__input"
+                            />
+                        </div>
+
+                        <textarea
+                            name="user_feedback"
+                            autocomplete="off"
+                            required
+                            placeholder="Enter your message"
+                            class="contact__input"
+                        ></textarea>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="button contact__button">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </section>
             
           
         </main>
